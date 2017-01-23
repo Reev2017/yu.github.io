@@ -1,0 +1,309 @@
+head, body, html, header, ul, p {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 65px;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+nav {
+    background-color: #2a2a2a;    
+    position: fixed;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav li {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.slicknav_menu {
+        display:none;
+    }
+
+aside a {
+    color: black;
+    text-decoration: none;
+}
+aside li {
+    list-style-type: none;
+    
+}
+footer p {
+    color: white;
+}
+main {
+        padding-bottom: 70px;
+        overflow: auto;
+    }
+
+
+@media screen and (min-width:960px) {
+    nav {
+        height: 65px;
+        width: 798px;
+        margin-left: 162px;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+       padding-left: 16px;
+    }
+    .hamburger, .cross, .menu {
+        visibility: hidden;
+    }
+    nav li {
+        padding: 15px;
+        width: 32%;
+        text-align: center;
+        margin-top: 5px;
+    }
+    aside {
+       padding-top: 20px;
+       width: 162px;
+       margin: 0;
+       position: fixed;
+    }
+    aside ul {
+        padding-left: 40px;
+    }
+    
+    article {
+        width: 798px;
+        float: right;
+        text-align: justify;
+        padding-top: 10px;
+    }    
+    footer {
+        width: 100%;
+        height: 68px;
+        background-color: #2a2a2a;
+        position: fixed;
+        bottom: 0;
+        text-align: left;
+        }
+    .logo {
+        margin: 0 auto;
+        width: 330px;
+        padding-left: 90px;
+    }
+    footer img {
+        float: left;
+        display: inline-block;
+    }
+    footer p {
+        display: inline-block;
+        float: right;
+        
+    }
+    span {
+        float: right;
+        padding-top: 15px;
+        width: 180px;
+        padding-left: 7px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+    
+}
+@media screen and (min-width:450px) and (max-width:960px) {
+    header {
+        height: 50px;
+        }
+    .container {
+        width: 100%;
+        }
+    .hamburger, .cross, .menu {
+        visibility: hidden;
+    }
+    nav {
+        height: 50px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    nav li {
+        padding: 15px;
+        width: 32%;
+        text-align: center;
+        margin-top: 0px;
+    }
+    aside {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin: 10px 0px;
+        }
+
+    aside ul li {
+        display: inline-block;
+        width: 18%;
+        padding: 10px 0px;
+        border-left: 1px solid black;
+       
+    }
+    aside ul li:first-child {
+        border: none;
+    }
+    
+    article {
+        width: 100%;
+        text-align: justify;
+       
+       }
+    footer {
+        width: 100%;
+        height: 68px;
+        background-color: #2a2a2a;
+        position: fixed;
+        bottom: 0;
+        text-align: left;
+        }
+    .logo {
+        margin: 0 auto;
+        width: 350px;
+        padding-left:5%;
+        }
+    footer img {
+        float: left;
+        
+             
+    }
+    footer p {
+        display: inline-block;
+        color: white;
+       
+    }
+    span {
+        float: right;
+        padding-top: 15px;
+        width: 180px;
+        padding-left: 7px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;        
+    }
+    
+}
+
+@media screen and (min-width:50px) and (max-width:450px) {
+    
+    .container {
+        width: 100%;
+    }
+    
+    header {
+        height: 30px;
+    }
+    
+    nav {
+        width: 100%;
+        background-color: #2a2a2a;
+        height: 31px;
+        text-align: center;
+        }
+    nav li {
+        padding: 6px;
+        width: 32%;
+        text-align: center;
+        margin-top: 0px;
+    
+    }
+    nav a {
+        font-size: 0.9em;
+    }
+    article {
+        width: 100%;
+        text-align: justify;
+       
+       }
+    .slicknav_menu {
+            display:block;
+           
+        }
+    aside {
+        display: none;
+    }
+    
+    footer {
+        width: 100%;
+        height: 40px;
+        background-color: #2a2a2a;
+        position: fixed;
+        bottom: 0;
+        text-align: left;
+        }
+    footer img {
+        display: none;
+        }
+    footer p {
+        text-align: center;
+        padding-top: 6px;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    main  {
+        margin-top: 50px;
+    }
+
+    
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:25px;
+  padding:0px 5px 0px 5px;
+  color:#fff;
+  border:0;
+  font-size:1em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:3px 5px 0px 5px;
+  color:#fff;
+  border:0;
+  font-size:2em;
+  line-height:45px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid; width: 100%;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
